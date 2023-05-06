@@ -3,13 +3,15 @@
     --white-color : #ffffff;
     --input-border-color : #dee2e6;
     --navbar-border-bottom : #4976e6;
-    --grey-box : #808080;
+    --grey-box : #c5cbd5;
     --yellow-outled : #fff200;
     --red-name-deal : #cb2121;
+    --black : #000000;
 }
 
 body{
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .navbar-background-color{
@@ -153,6 +155,7 @@ li > a > b{
 .dropdown-item:hover{
     color: var(--navbar-background);
     background-color: var(--white-color);
+    transition: all .4s ease-in-out;
 }
 
 .dropdown-divider{
@@ -204,16 +207,25 @@ li > a > b{
     height: 44px;
 }
 
+.size-extra-menu{
+    min-width: 1773px;
+    padding-right: 140px;
+    margin-left: 210px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .extra-menu-size{
     font-size: 13px;
 }
 
 .first-extra{
-    margin-left: 63px;
+    /* margin-left: 29px; */
 }
 
 .last-extra{
-    margin-right: 69px;
+    /* margin-right: 43px; */
 }
 
 .extra-menu-link{
@@ -223,25 +235,32 @@ li > a > b{
 
 .extra-menu-link:hover{
     text-decoration: underline;
+    transition: all .4s ease-in-out;
 }
 
 .first-extra-menu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 60%;
+    min-width: 1000px;
+    justify-content: space-between;
 }
 
 .second-extra-menu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 33%;
+    justify-content: flex-start;
+    min-width: 590px;
+    column-gap: 18px;
 }
 
+.first-second{
+    margin-left: 45px;
+}
 
 .first-container{
     margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .products-section{
@@ -344,6 +363,7 @@ img{
 .link-clearance > a:hover, .link-top-product > a:hover, .link-top-product-deal > a:hover, .shollTopDeal:hover{
     text-decoration: underline;
     color: var(--navbar-background );
+    transition: all .4s ease-in-out;
 }
 
 #deal-day{
@@ -373,4 +393,324 @@ img{
 
 .link-top-product-deal > a, .shollTopDeal{
     text-decoration: none;
+}
+
+/* new arrivals */
+
+.container-list-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-row-size{
+    min-width: 1773px;
+    padding-right: 100px;
+    padding-left: 102px;
+}
+
+.row-products-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#title-section{
+    margin-bottom: 0px;
+}
+#title-section::after{
+    content: "__________";
+    position: relative;
+    top: 10px;
+    right: 99px;
+    font-weight: 900;
+}
+
+.container-list-product-5{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.new-arrivals-top{
+    width: 294px;
+    height: 229px;
+    border: 1px solid var(--grey-box);
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.new-arrivals-top > p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.new-arrivals-img{
+    object-fit: contain;
+}
+
+/* total tech*/
+
+.container-totaltech{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.totaltech{
+    height: 160px;
+    background-image: url("../images/gl62892-tt-skinny-bg-lg-4ed9a87a-ca73-4e7a-8610-0f2159f2239b.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1575px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-totaltech{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttom-totaltech{
+    position: relative;
+    top: 52px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.style-learnmore{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+}
+
+#learnMoreButton{
+    background-color: var(--white-color);
+    color: var(--navbar-background);
+    font-weight: 700;
+    width: 178px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 13px;
+    height: 33px;
+}
+
+#learnMoreButton:hover{
+    background-color: var(--navbar-background);
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    transition: all .4s ease-in-out;
+
+}
+
+.hr-Vertical{
+    width: 1px;
+    background-color: var(--white-color);
+    margin-top: 98px;
+    position: relative;
+    top: -36px;
+    left: 25px;
+    margin-right: 50px;
+}
+
+.membership{
+    position: relative;
+    top: 45px;
+    color: var(--white-color);
+}
+
+#membership-text{
+    margin-top: 0px;
+    width: 495px;
+    font-size: 13px;
+}
+
+.membership > h3{
+    font-size: 1.68rem;
+    margin-bottom: 0px;
+}
+
+/*top Deals */
+.container-topDeals{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.row-topDeals{
+    height: 534px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-topDeals{
+    min-width: 504px;
+    min-height: 504px;
+    border: 1px solid var(--grey-box);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mackbook-background{
+    background-image: url("../images/ghp-MMT-659787-macbook-f3e75956-d989-49c7-96b5-45eb5d4e73f5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-topDeals{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.mackbook-background > h2, .mackbook-background > p, .latest-tv > h2{
+    position: relative;
+    top: 60px;
+}
+
+.mackbook-background > p{
+    font-size: 11px;
+}
+
+.latest-tv{
+    background-image: url("../images/ghp-MMT-680552-tv-455fa80f-f5c6-42c2-9cab-a22699764493.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.DealModeActivated{
+    background-image: url("../images/MMT-510776_TopDealsGHP-LV-82d476b2-8238-447e-a5ba-031a67f017e0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shopNow{
+    position: relative;
+    top: 334px;
+    background-color: var(--white-color);
+    color: var(--navbar-background);
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    width: 83px;
+    height: 30px;
+}
+
+.shopNow:hover{
+    background-color: var(--navbar-background);
+    color: var(--white-color);
+    border-color: var(--white-color);
+    transition: all .4s ease-in-out;
+}
+
+/**********************************************************
+                    PHONE VIEW
+**********************************************************/
+@media (min-width: 320px) and (max-width: 767px) {
+    /* first navbar*/
+
+    .display-flex {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        align-items:start; 
+    }
+
+    .search-input {
+        width: 366px;
+        padding-left: 24px;
+    }
+
+    .icon-navbar-end {
+        left: 23px;
+    }
+
+    .icon-navbar-end:last-child {
+        left: 24px;
+    }
+
+    .show-color{
+        background-color: var(--white-color);
+    }
+
+    .navbar-phone{
+        top: 73px;
+        position: absolute;
+    }
+
+    .nav-link {
+        color: var(--navbar-background);
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .nav-link:hover{
+        color: var(--navbar-background);
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: var(--navbar-background);
+    }
+
+    .nav-link > svg{
+        fill: var(--navbar-background);
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        top: 39px;
+        left: 1px;
+        position: absolute;
+    }
+
+    /* second navbar */
+    .extra-menu {
+        overflow-x: scroll;
+        justify-content:start;
+
+    }
+
+    .first-extra-menu {
+        display: flex;
+        justify-content: flex-start;
+        min-width: auto;
+        align-items: center;
+
+    }
+
+    .extra-menu-size {
+        width: max-content;
+        display: grid;
+        margin-right: 13px;
+    }
+
+    .first-extra {
+        margin-left: 10px;
+    }
+
+    .second-extra-menu {
+        width: auto;
+    }
+
+    .size-extra-menu {
+        margin-left: 0px; 
+        justify-content: flex-start;
+        min-width: fit-content;
+        padding-right: 0px;
+    }
 }
