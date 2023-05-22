@@ -4,9 +4,12 @@
   --input-border-color: #dee2e6;
   --navbar-border-bottom: #4976e6;
   --grey-box: #c5cbd5;
+  --border-box: #90959e;
+  --light-grey: #f0f2f4;
   --yellow-outled: #fff200;
   --red-name-deal: #cb2121;
   --black: #000000;
+  --dark-navbar: #032b71;
 }
 
 body {
@@ -430,11 +433,19 @@ img {
 #trendingNow {
   margin-bottom: 0px;
 }
+
+#title-section {
+  font-size: 17px;
+}
+
+#trendingNow {
+  font-size: 20px;
+}
 #title-section::after {
   content: "__________";
   position: relative;
   top: 10px;
-  right: 99px;
+  right: 103px;
   font-weight: 900;
 }
 
@@ -654,6 +665,98 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
+/* our featured offers */
+.section-Our-feature {
+  min-width: 505px;
+  min-height: 266px;
+  display: flex;
+  flex-direction: column;
+}
+
+.OurFeaturedOffers {
+  object-fit: contain;
+  width: 500px;
+  height: 266px;
+}
+
+.description-blue {
+  text-decoration: none;
+  color: var(--navbar-background);
+}
+
+.description-blue:hover,
+.infoItems:hover {
+  text-decoration: underline;
+  color: var(--dark-navbar);
+}
+.zise-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.semi-little-text {
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.litle-text {
+  font-size: 12px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 300;
+}
+
+.middle-offer,
+.text-section {
+  border-right: 1px solid var(--grey-box);
+  border-left: 1px solid var(--grey-box);
+}
+
+.text {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.info-items {
+  min-width: 770px;
+  min-height: 90px;
+  background-color: var(--light-grey);
+  border: 1px solid var(--grey-box);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-OurFeatured {
+  min-height: 334px;
+}
+
+.row-display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleInfoItems {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 700;
+}
+
+.midlle-text {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.infoItems {
+  text-decoration: none;
+}
+
+.infoItemsText {
+  padding-left: 5px;
+}
 /**********************************************************
                     PHONE VIEW
 **********************************************************/
