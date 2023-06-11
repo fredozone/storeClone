@@ -274,6 +274,11 @@ li > a > b {
   margin-left: 28px;
 }
 
+.big-imagen-start {
+  width: 645px;
+  height: 645px;
+}
+
 .topProduct {
   width: 897px;
   height: 222px;
@@ -757,6 +762,11 @@ img {
 .infoItemsText {
   padding-left: 5px;
 }
+
+.dealofthedayImg {
+  width: 395px;
+  height: 206px;
+}
 /**********************************************************
                     PHONE VIEW
 **********************************************************/
@@ -851,6 +861,104 @@ img {
     justify-content: flex-start;
     min-width: fit-content;
     padding-right: 0px;
+  }
+}
+
+/**********************************************************
+                    LAPTOP VIEW
+**********************************************************/
+@media (min-width: 1040px) and (max-width: 1536px) {
+  .container-row-size {
+    min-width: 1417px;
+  }
+
+  .big-imagen-start {
+    display: none;
+  }
+
+  .topProduct {
+    width: 721px;
+  }
+
+  .style-box-CS {
+    width: 360px;
+  }
+
+  .dealofthedayImg {
+    width: 320px;
+    height: 180px;
+  }
+
+  .laptop-img {
+    background-image: url(../images/ghp-MMT-680552-oura-2888de0f-38a7-4497-a083-833ebf540ba2.jpg);
+    width: 464px;
+    background-repeat: round;
+    height: 645px;
+  }
+
+  .new-arrivals-top {
+    width: 238px;
+  }
+
+  /* .new-arrivals-img,
+  .items-show img {
+    max-width: 168px;
+  } */
+
+  .new-arrivals-top > img {
+    width: 184px;
+  }
+
+  .section-topDeals {
+    min-width: 405px;
+  }
+
+  .DealModeActivated {
+    background-position: revert;
+    background-repeat: round;
+    background-size: contain;
+  }
+
+  .title-topDeals {
+    font-size: 1.4rem;
+  }
+
+  .section-Our-feature {
+    min-width: 305px;
+  }
+
+  .OurFeaturedOffers {
+    width: 300px;
+  }
+
+  .middle-offer {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .info-items {
+    min-width: 589px;
+  }
+
+  .search-input {
+    width: 564px;
+  }
+
+  .navbar-phone {
+    width: 1100px;
+  }
+
+  .first-extra {
+    margin-left: 183px;
+  }
+
+  .second-extra-menu {
+    min-width: 640px;
+    column-gap: 3px;
+  }
+
+  .first-second {
+    margin-left: 4px;
   }
 }
 
