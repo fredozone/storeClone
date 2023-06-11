@@ -877,11 +877,11 @@ img {
   }
 
   .topProduct {
-    width: 721px;
+    width: 690px;
   }
 
   .style-box-CS {
-    width: 360px;
+    width: 345px;
   }
 
   .dealofthedayImg {
@@ -891,7 +891,7 @@ img {
 
   .laptop-img {
     background-image: url(../images/ghp-MMT-680552-oura-2888de0f-38a7-4497-a083-833ebf540ba2.jpg);
-    width: 464px;
+    width: 495px;
     background-repeat: round;
     height: 645px;
   }
@@ -899,11 +899,6 @@ img {
   .new-arrivals-top {
     width: 238px;
   }
-
-  /* .new-arrivals-img,
-  .items-show img {
-    max-width: 168px;
-  } */
 
   .new-arrivals-top > img {
     width: 184px;
